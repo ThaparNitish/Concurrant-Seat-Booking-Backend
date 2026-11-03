@@ -1,10 +1,10 @@
 import { Router } from "express";
-import seatRoutes from "./seat.routes.js";
 import bookingRoutes from "./booking.routes.js";
+import eventRoutes from "./event.routes.js";
 
 const router = Router();
 
-router.use("/seats", seatRoutes);
 router.use("/bookings", bookingRoutes);
+router.use("/events",eventRoutes);
 
 export default router;
